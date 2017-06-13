@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    /*min-width: 414px;*/
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* swiper style */
+.swiper-container {
+    width: 100%;
+    height: 200px;
+}
+
+/* div header */
+#header {
+    width: 100%;
+    /*height: 200px;*/
+    background: url("../img/taiwu.jpg") no-repeat;
+    background-size: 100%;
+}
+#header img {
+    width: 100%;
+}
+
+/* menu style */
+ul.menu, ul.submenu {
+    display: table;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #007aff;
+    color: white;
+    list-style: none;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+}
+ul.menu > li {
+    border-bottom: 2px solid #fff;
+}
+ul.menu > li.active {
+    border-bottom: 2px solid #fc3e50;
+}
+ul.menu > li, ul.submenu > li {
+    display: table-cell;
+    width: 20%;
+    font-weight: bold;
+}
+ul.menu > li + li, ul.submenu > li + li {
+    padding: 1rem;
+    border-left: .1rem solid #eee;
+}
+ul.menu > li:active, ul.menu > li.active,
+ul.submenu li:active, ul.submenu li.active{
+    background-color: #fc3e50;
+    /*color: #007aff;*/
+}
+
+/* Submenu */
+ul.submenu {
+    display: none;
+    font-size: 1.4rem;
+    background-color: skyblue;
+}
+
+/* Section style */
+section {
+    display: none;
+}
+section.active {
+    display: block;
+}
+section h2 {
+    text-align: center;
+    color: #fc3e50;
+}
+
+section a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    text-align: center;
+}
+section a:active {
+    /*background-color: #ccc;*/
+}
+section img, section iframe {
+    margin-right: 1rem;
+    vertical-align: baseline;
+    background: url(../public_img/loading.gif) no-repeat center;
+}
+
+iframe {
+    display: inline-block;
+    width: 160px;
+    height: 90px;
+    vertical-align: top;
+}
+
+section h3 {
+    display: inline-block;
+    width: 8em;
+    height: 6rem;
+    line-height: 1.5;
+    margin: 0;
+    /*padding: 2rem 0;*/
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 2rem;
+    /*-ms-text-overflow: ellipsis;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+}
+section hr {
+    width: 90%;
+    border:none;
+    border-bottom: 1px solid #cccccc;
+    margin: .8rem auto;
+}
+
+/* Footer Style */
+footer {
+    padding: 1rem 0;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+footer img {
+    vertical-align: -20%;
+}
+
+
